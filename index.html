@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WQI PREDICTOR</title> <link rel="shortcut icon" href="favicon2.webp">
+</head>
+<body>
+    <div class="container">
+        <h1>BIEL THE HYPE</h1>
+        <div class="board">
+            <!-- O tabuleiro é gerado dinamicamente pelo JavaScript -->
+        </div>
+        <div class="input-container">
+            <p>Insira o código:</p>
+            <input type="text" id="code-input" maxlength="36">
+            <p>Quantidade de Jogadas (1-12):</p>
+            <input type="number" id="quantity-input" min="1" max="12">
+            <button id="concluir-button">Concluir</button>
+            <button id="reveal-button" class="hidden">Revelar Jogadas</button>
+            <button id="reset-button" class="hidden">Novo Código</button>
+        </div>
+        <div class="percentage-container hidden">
+            <p id="percentage">Chance de Acerto:</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

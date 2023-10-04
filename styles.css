@@ -1,0 +1,92 @@
+body {
+    background-color: #0a0e3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #1c2a63;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    gap: 10px;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: #101b4b;
+    border: 1px solid #152249;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.cell.green {
+    background-color: #2ecc71;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#code-input,
+#quantity-input {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #0a0e3f;
+    color: #fff;
+    border: 1px solid #152249;
+}
+
+#concluir-button,
+#reveal-button,
+#reset-button {
+    padding: 10px 20px; /* Aumentar o espaçamento dentro dos botões */
+    margin: 10px; /* Adicionar margem entre os botões */
+    font-size: 16px;
+    background-color: #2ecc71;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#reset-button {
+    background-color: #ff6347;
+}
+
+#reveal-button.hidden,
+#reset-button.hidden {
+    display: none;
+}
+
+.percentage-container {
+    margin-top: 20px;
+}
+
+.percentage-container p {
+    font-size: 16px;
+    margin: 0;
+}
